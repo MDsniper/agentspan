@@ -1,11 +1,12 @@
 {
-  "name": "typescript-sdk",
+  "name": "project",
   "private": true,
   "scripts": {
-    "prepare": "husky"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0"
-  }
+  },
+  "version": "1.0.0"
 }
